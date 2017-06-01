@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 from django.contrib.auth import views as auth_views
 
 from vitabu.books import views
-
+#below are the urls for vitabu app
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='home.html'), name='home'),
     url(r'^login/$', auth_views.login,
